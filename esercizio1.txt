@@ -1,4 +1,4 @@
-In un nuovo progetto di tipo Console (.NET Framework) definire:
+In un nuovo progetto di tipo Console (.NET Framework o .NET Core) definire:
 
 - Una classe Automobile con i seguenti campi:
 	- Marca (string)
@@ -12,7 +12,7 @@ e i seguenti metodi:
 	- Viaggio (int kilometri): consuma il carburante in base al consumo; se il carburante finisce il metodo avvisa che il carburante è finito.
 	
 Nel programma principale con metodo Main() eseguire le seguenti operazioni:
-- Definire un array di 3 automobili
+- Definire una List di 3 automobili
 - Inizializzare le 3 automobili specificando marca, modello, cilindrata, capacità e consumo
 - Fare rifornimento alle 3 automobili introducendo una certa quantità di carburante
 - con un ciclo, fare un viaggio di un certo numero di km, durante il quale ogni automobile viene fatta viaggiare per 1 km alla volta.
