@@ -4,7 +4,7 @@ using System.Text;
 
 namespace _04_Collezioni
 {
-    class Collezioni
+    class Liste
     {
         static void Main(string[] args)
         {

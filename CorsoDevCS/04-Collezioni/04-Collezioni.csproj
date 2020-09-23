@@ -4,7 +4,7 @@
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>_04_Collezioni</RootNamespace>
-    <StartupObject>_04_Collezioni.Collezioni</StartupObject>
+    <StartupObject>_04_Collezioni.Dizionari</StartupObject>
   </PropertyGroup>
 
 </Project>
