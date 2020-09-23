@@ -1,0 +1,10 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>_04_Collezioni</RootNamespace>
+    <StartupObject>_04_Collezioni.Collezioni</StartupObject>
+  </PropertyGroup>
+
+</Project>
