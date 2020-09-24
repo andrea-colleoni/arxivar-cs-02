@@ -6,6 +6,7 @@ namespace Esercizio_02
 {
     class Program
     {
+        // soluzione dell'esercizio 2
         static void Main(string[] args)
         {
             var regioni = new List<Regione>();

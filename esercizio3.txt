@@ -1,0 +1,13 @@
+- Riprendere il modello di automobile definito nell'esercizio 1
+- Aggiungere
+	- campo chiave da qualificare con l'attributo [Key]
+
+- Creare un DB dove ospitare le automobili
+- Creare la tabella Automobile mappabile sull'oggetto di cui sopra
+
+- Caricare nel DB le automobili che hai definito nell'esercizio 1
+- Ripetere la gara di automobili, con lo stesso codice usato nell'esercizio 1
+
+Usare uno di queti due approcci:
+- Creare prima il DB e poi un nuovo ADO.NET Entity Data Model e seguire lo wizard
+- Creare manualmente la classe DbContext e Automobile (come nell'esempio del progetto 06-ef) e configurare in App.config la connectionString verso il DB
