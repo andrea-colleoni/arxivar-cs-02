@@ -5,8 +5,22 @@ namespace Esercizio_01
 {
     class Program
     {
+        // variabile statica (di classe)
+        public static int x;
+
+        // variabile d'istanza
+        int y;
+
         static void Main(string[] args)
         {
+            // da un contesto statico non posso accedere a variabili o metodi d'istanza
+            // y = 10;
+            var prg = new Program();
+            prg.y = 10;
+
+            // accesso a un membro di classe
+            Program.x = 10;
+
             // var automobili = new List<Automobile>();
             //automobili.Add(new Automobile("Fiat", "Tipo", 1500, 34, 18));
             //automobili.Add(new Automobile("Alfa Romeo", "Giulia", 2000, 45, 13));

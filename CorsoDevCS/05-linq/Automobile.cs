@@ -1,8 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 
-namespace Esercizio_01
+namespace _05_linq
 {
     class Automobile
     {
@@ -17,8 +15,6 @@ namespace Esercizio_01
 
         public Automobile(string marca, string modello, int cilindrata, float capacita, float consumo)
         {
-			Program.x = 20;
-
 			this.Marca = marca;
 			this.Modello = modello;
 			this.Cilindrata = cilindrata;
