@@ -2,7 +2,7 @@
 	- Nome: string
 	- AreaGeografica (nord, centro, sud, isole): enumeration
 	
-- Definire una classe citta:
+- Definire una classe Citta:
 	- Nome: string
 	- Provincia: string
 	- Regione: Regione
@@ -11,10 +11,10 @@
 	
 - Costruire un programma
 	- una variabile regioni: List<Regione> con almeno 3 regioni (Lombardia, Lazio, Sicilia)
-	- una variabile provincie: List<Provincia> con almeno 8 pronvincie divise nelle tre regioni di cui sopra
+	- una variabile citta: List<Citta> con almeno 8 città divise nelle tre regioni di cui sopra
 	
 	- Usando Linq, calcolare e stampare su console:
 		- L'estensione totale della lombardia
 		- La popolazione totale della Sicilia
-		- La poloazione totale delle provincie che hanno un'estensione maggiore di 1000
-		- L'elenco delle provincie che hanno un'estensione maggiore della media delle estensioni della propria regione
+		- La popolazione totale delle citta che hanno un'estensione maggiore di 1000
+		- L'elenco delle citta che hanno un'estensione maggiore della media delle estensioni della propria regione
