@@ -9,6 +9,9 @@ namespace _05_linq
     {
         static void Main(string[] args)
         {
+            var lomb = new Regione();
+            lomb.Area = AreaGeografica.Nord;
+
             int i = 10;
 
             Console.WriteLine(i.ToString());
