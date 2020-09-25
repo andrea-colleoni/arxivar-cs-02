@@ -1,0 +1,17 @@
+- crea un'applicazione aspnet web mvc + un'API web per gestire ordini ecommerce
+- l'ordine è formato da:
+	- testata:
+		- cliente (testo)
+		- data (datetime)
+		- numero d'ordine (id, int, PK)
+	- righe
+		- rif testata
+		- id riga (int, pk)
+		- prodotto (testo)
+		- qty (int)
+		- prezzo unitario
+		
+L'applicazione deve essere dotata di log.
+
+- il db deve essere creato dall'applicazione (code first)
+- il log deve stare su file

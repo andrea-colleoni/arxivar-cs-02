@@ -8,7 +8,7 @@
 - Caricare nel DB le automobili che hai definito nell'esercizio 1
 - Ripetere la gara di automobili, con lo stesso codice usato nell'esercizio 1
 
-Usare uno di queti due approcci:
+Usare uno di questi due approcci:
 - Creare prima il DB e poi un nuovo ADO.NET Entity Data Model e seguire lo wizard
 - Creare manualmente la classe DbContext e Automobile (come nell'esempio del progetto 06-ef) e configurare in App.config la connectionString verso il DB
 
