@@ -48,9 +48,32 @@ namespace _05_linq
 
             // voglio conoscere il consumo medio delle auto che hanno una cilindrata >= 1500
             var medio = automobili
-                .Where(a => a.Cilindrata >= 1500)
-                .Select(a => a.ConsumoKmLitro)
-                .Average();
+                .Where(a =>
+                {
+                    var oggi = DateTime.Today;
+                    if (oggi.Day % 2 == 0)
+                    {
+                        return a.Cilindrata >= 2000;
+                    }
+                    else
+                    {
+                        return a.Cilindrata >= 1500;
+                    }
+                })
+                // .Where(a =>
+                // {
+                //     return a.Cilindrata >= 1500;
+                // })
+                //.Where(a => a.Cilindrata >= 1500)
+                .Select(a => new { a.Marca, Pippo = "Ciao", SemiConsumo = a.ConsumoKmLitro / 2 });
+                //.Average();
+
+
+            foreach (var x in medio)
+            {
+                Console.WriteLine($"x => Marca: {x.Marca}   {x.Pippo}.... {x.SemiConsumo}");
+            }
+            /*
             Console.WriteLine($" consumo medio {medio}");
 
             automobili.Any(a => a.ConsumoKmLitro < 15);
@@ -63,7 +86,7 @@ namespace _05_linq
 
             float consumoTot = 0;
             int conteggio = 0;
-            foreach(var a in automobili)
+            foreach (var a in automobili)
             {
                 if (a.Cilindrata >= 1500)
                 {
@@ -73,7 +96,15 @@ namespace _05_linq
             }
             medio = consumoTot / conteggio;
             Console.WriteLine($" consumo medio {medio}");
+            string paperino = "ciao";
+            aaa(paperino);
+            */
+        }
 
+
+        static void aaa(string topolino)
+        {
+            Console.WriteLine(topolino);
         }
     }
 }
