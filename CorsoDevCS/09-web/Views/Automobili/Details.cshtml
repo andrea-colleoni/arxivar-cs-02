@@ -1,0 +1,66 @@
+﻿@model Esercizio_03.Automobile
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Automobile</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Marca)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Marca)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Modello)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Modello)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Cilindrata)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Cilindrata)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CapacitaSerbatoio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CapacitaSerbatoio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.LivelloCarburante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.LivelloCarburante)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConsumoKmLitro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConsumoKmLitro)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.IdAutomobile }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
