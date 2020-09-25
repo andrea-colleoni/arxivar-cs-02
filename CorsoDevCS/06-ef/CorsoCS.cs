@@ -8,7 +8,8 @@ namespace _06_ef
     public partial class CorsoCS : DbContext
     {
         public CorsoCS()
-            : base("name=CorsoCS")
+            : base("name=CorsoCSDev") // fa riferimento a una connectionstring definita nel file .config
+            // di questa applicazione
         {
         }
 

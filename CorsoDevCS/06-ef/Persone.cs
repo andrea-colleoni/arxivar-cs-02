@@ -28,5 +28,7 @@ namespace _06_ef
         public double? PesoInKg { get; set; }
 
         public DateTime? DataNascita { get; set; }
+        [NotMapped]
+        public string SoloNelProgramma { get; set; }
     }
 }

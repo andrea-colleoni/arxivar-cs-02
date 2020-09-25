@@ -11,3 +11,5 @@
 Usare uno di queti due approcci:
 - Creare prima il DB e poi un nuovo ADO.NET Entity Data Model e seguire lo wizard
 - Creare manualmente la classe DbContext e Automobile (come nell'esempio del progetto 06-ef) e configurare in App.config la connectionString verso il DB
+
+NB: Ricordate di fare un progetto .NET Framework perché con .NET Core EntityFramework è un po' diverso!!

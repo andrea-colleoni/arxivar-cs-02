@@ -18,7 +18,7 @@ namespace _06_ef
             }
 
             // db.Persone.Add(new Persone { Nome = "Luigio", Cognome = "Verdi", PesoInKg = 90.2 });
-            db.Tabella.Add(new Tabella { IdTabella = 1, Campo = "ciao" });
+            db.Tabella.Add(new Tabella { IdTabella = 2, Campo = "ciao" });
             db.SaveChanges();
             Console.ReadLine();
         }

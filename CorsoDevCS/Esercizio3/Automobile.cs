@@ -4,26 +4,41 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
-namespace Esercizio_01
+namespace Esercizio_03
 {
-	[Table("Automobile")]
+	[Table("AUTOMOBILE")]
     public class Automobile
     {
 		[Key]
-        public int Id { get; set; }
-        public string Marca { get; set; }
+		[DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+		[Column("ID_AUTOMOBILE")]
+        public int IdAutomobile { get; set; }
+		[Required]
+		[StringLength(30)]
+		[Column("MARCA")]
+		public string Marca { get; set; }
+		[Required]
+		[StringLength(30)]
+		[Column("MODELLO")]
 		public string Modello { get; set; }
-		public int Cilindrata { get; set; }
-		public float CapacitaSerbatoio { get; set; }
-		public float LivelloCarburante { get; set; }
-		public float ConsumoKmLitro { get; set; }
-
+		[Column("CILINDRATA")]
+		public int? Cilindrata { get; set; }
+		[Column("CAPACITA_SERBATOIO")]
+		public float? CapacitaSerbatoio { get; set; }
+		[Column("LIVELLO_CARBURANTE")]
+		public float? LivelloCarburante { get; set; }
+		[Column("CONSUMO_KM")]
+		public float? ConsumoKmLitro { get; set; }
+		
 		private bool autoAccesa;
+
+        public Automobile()
+        {
+
+        }
 
         public Automobile(string marca, string modello, int cilindrata, float capacita, float consumo)
         {
-			Program.x = 20;
-
 			this.Marca = marca;
 			this.Modello = modello;
 			this.Cilindrata = cilindrata;
